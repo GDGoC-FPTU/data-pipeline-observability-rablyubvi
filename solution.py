@@ -79,7 +79,7 @@ def validate(data):
             drop_record.append({"id": record.get('id'), "reason": "Missing category"})
             continue
         valid_records.append(record)
-    print(f"Validation complete. Valid: {len(valid_records)}, Errors: {len(drop_record)}, Dropped Records: {drop_record}")
+    print(f"Validation complete. {len(valid_records)} valid, {len(drop_record)} invalid, Dropped Records: {drop_record}")
     return valid_records
 
 
